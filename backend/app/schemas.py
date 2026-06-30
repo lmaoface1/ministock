@@ -37,3 +37,13 @@ class SaleOut(BaseModel):
 
     class Config:
         from_attributes = True
+
+class FrozenResultOut(BaseModel):
+    id: int
+    product_id: int
+    is_frozen: int
+    capital_tied: float
+    generated_at: datetime
+
+    class Config:
+        from_attributes = True
